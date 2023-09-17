@@ -226,8 +226,8 @@ class HBNBCommand(cmd.Cmd):
                         val = val_convert(val)
                     except ValueError:
                         pass
-                    setattr(storage.all()[instance_key], attr, val)
-                    storage.all()[instance_key].save()
+                setattr(storage.all()[instance_key], attr, val)
+                storage.all()[instance_key].save()
 
 
 if __name__ == '__main__':
