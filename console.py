@@ -76,7 +76,7 @@ class HBNBCommand(cmd.Cmd):
 
     def update_dict(self, class_name, uid, input_dict):
         """This is a helper method for update() with a dictionary."""
-        json_str = input_dict.replace(" ' ", ' " ')
+        json_str = input_dict.replace("'", '"')
         up_dict = json.loads(json_str)
 
         if not class_name:
