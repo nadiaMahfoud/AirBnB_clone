@@ -66,13 +66,13 @@ class HBNBCommand(cmd.Cmd):
                 val_attr = (val_attr_match.group(
                     1) or "") + " " + (val_attr_match.group(2) or "")
 
-            # Construct a modified command string for execution
-            mod_cmd = method + " " + class_name + " " + uid + " " + val_attr
-            # Call the command interpreter with the modified command
-            self.onecmd(mod_cmd)
+        # Construct a modified command string for execution
+        mod_cmd = method + " " + class_name + " " + uid + " " + val_attr
+        # Call the command interpreter with the modified command
+        self.onecmd(mod_cmd)
 
-            # Return the modified command string (or empty str if processed)
-            return mod_cmd
+        # Return the modified command string (or empty str if processed)
+        return mod_cmd
 
     def update_dict(self, class_name, uid, input_dict):
         """This is a helper method for update() with a dictionary."""
