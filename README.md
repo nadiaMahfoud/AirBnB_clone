@@ -144,6 +144,7 @@ Update your command interpreter (console.py) to update an instance based on his 
 Errors management must be the same as previously. ./console.py (hbnb) User.show("38f22813-2753-4d42-b37c-57a17f1e4f88") (hbnb) (hbnb) User.update("38f22813-2753-4d42-b37c-57a17f1e4f88", "first_name", "John") (hbnb) User.update("38f22813-2753-4d42-b37c-57a17f1e4f88", "age", 89) (hbnb) (hbnb) User.show("38f22813-2753-4d42-b37c-57a17f1e4f88")
 
 17. {'first_name': "John", "age": 89}) [ tests/test_console.py ]
+
 Contributors:
 
 Amal Nadifi
